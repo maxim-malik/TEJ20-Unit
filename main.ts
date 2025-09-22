@@ -1,8 +1,11 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by: XXX
- * Created on: Sep 2020
- * This program ...
+ * Created by: Max
+ * Created on: Sep 2025
+ * This program shows temperature of microbit 
 */
 
-basic.showString('Hello, World!')
+input.onButtonPressed(Button.A, () => {
+    let temp = input.temperature()
+    basic.showNumber(temp)
+})
