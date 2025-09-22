@@ -4,7 +4,7 @@
  * Created on: Sep 2025
  * This program shows temperature of microbit 
 */
-
+basic.clearScreen()
 input.onButtonPressed(Button.A, () => {
     let temp = input.temperature()
     basic.showNumber(temp)
